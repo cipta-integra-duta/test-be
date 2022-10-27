@@ -13,7 +13,7 @@ Route::get('/user', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => $users
-      ], 200);;
+      ], 200);
 });
 
 // point 1 : handling Cross-Origin Resource Sharing (CORS)
@@ -29,7 +29,7 @@ Route::post('/user/create', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "create"
-      ], 200);;
+      ], 200);
 });
 
 // point 3 : update new user
@@ -39,7 +39,7 @@ Route::post('/user/update', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "update"
-      ], 200);;
+      ], 200);
 });
 
 // point 4 : delete new user
@@ -49,7 +49,7 @@ Route::delete('/user/delete', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "delete"
-      ], 200);;
+      ], 200);
 });
 
 // point 5 : import new user / bulk insert
@@ -59,7 +59,7 @@ Route::post('/user/bulk-insert', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "bulk"
-      ], 200);;
+      ], 200);
 });
 
 // point 5 : delete multiple user / bulk delete
@@ -69,7 +69,7 @@ Route::post('/user/bulk-delete', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "delete"
-      ], 200);;
+      ], 200);
 });
 
 // point 6 : export user to excel, field: name, email, gender, location
@@ -79,7 +79,7 @@ Route::get('/user/export-excel', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "excel"
-      ], 200);;
+      ], 200);
 });
 
 // point 7 : export user to pdf, field: name, email, gender, location
@@ -89,7 +89,7 @@ Route::get('/user/export-pdf', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "pdf"
-      ], 200);;
+      ], 200);
 });
 
 // point 8 : upload a photo user, validation with max photo is 4MB
@@ -99,7 +99,7 @@ Route::get('/user/upload', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "upload"
-      ], 200);;
+      ], 200);
 });
 
 // point 8 : send an email to user
@@ -111,7 +111,7 @@ Route::get('/user/send-email/{id}', function (Request $request) {
         'status' => true,
         'message' => "Success",
         'data' => "upload"
-      ], 200);;
+      ], 200);
 });
 
 // point 9 : make a kernel command / cronjob to send an email to user
