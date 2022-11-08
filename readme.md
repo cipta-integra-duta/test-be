@@ -1,6 +1,6 @@
 # Backend Test Coding
 ### Where You Code
-Make a new branch with your name and then you can use a directory APP to submit your coding.
+Make a new branch with your name and then you can use a directory Chapter to submit your coding.
 see the GUIDE in api router.
 
 ### Chapter Completion
